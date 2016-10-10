@@ -1,22 +1,25 @@
-class Game
-  attr_accessor :player1, :player2
+require './player'
+require './questions'
+require './game'
 
-  def initialize(player1, player2)
-    @player1 = player1
-    @player2 = player2
+
+def start
+  newgame = Game.new("Ben", "Amna")
+
+  newq = newgame.turns
+  newq.question
+  newq.answer
+
+  puts newq.question
+  choice = gets.chomp.to_i
+
+  if choice === newq.answer
+    puts "you're right!"
   end
 
-  def
 
+# puts newgame.turns
+  # puts newgame.player1.inspect
 end
 
-class Player
-  attr_accessor :lives
-  def initialize()
-    @lives = 3
-  end
-end
-
-class Questions
-
-end
+start
