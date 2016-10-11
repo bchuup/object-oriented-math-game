@@ -43,12 +43,11 @@ class Game
     end
   end
 
-
   def start_game
-      while @player1.lives > 0 && @player2.lives > 0 do
-        self.turn
-        self.switch_player
-      end
-      self.end_game
+    while @player1.lives > 0 && @player2.lives > 0 do
+      self.turn
+      self.switch_player
     end
+    self.end_game
+  end
 end
