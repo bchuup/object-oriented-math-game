@@ -5,7 +5,7 @@ class Player
     @lives = 3
   end
 
-  def incorrect
+  def decrease_life
     @lives -= 1
   end
 
