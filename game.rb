@@ -8,18 +8,7 @@ class Game
 
   def turns
     newquestion = Questions.new
-    puts newquestion
     newquestion
   end
-
-  def lives
-    playerlives = Player.new
-  end
-
-  def incorrect
-    playerlives =- 1
-  end
-
-
 
 end
